@@ -10,7 +10,7 @@ export interface Question {
   type: QuestionType;
   prompt: string;
   options?: string[];
-  // 替换 validation.required 为更直观的 optional 标志
+  // 可选标志
   optional?: boolean;
   validation?: {
     minLength?: number;
@@ -41,12 +41,21 @@ export interface QuestionnaireConfig {
   defaultRequiredMessage?: string;
 }
 
+// 添加回 QuestionContainerProps 接口，保持兼容性
+export interface QuestionContainerProps {
+  question: Question;
+  onAnswer: (answer: any) => void;
+  currentAnswer?: any;
+  className?: string;
+}
+
+// 更新后的问题属性接口
 export interface QuestionProps {
   question: Question;
   onAnswer: (questionId: string, answer: any) => void;
   currentAnswer?: any;
-  error?: string;
-  className?: string;
+  error?: boolean;
+  required?: boolean;
 }
 
 export interface SubmissionData {

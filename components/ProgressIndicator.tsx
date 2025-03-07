@@ -1,6 +1,7 @@
+// components/ProgressIndicator.tsx
 "use client";
 
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@/components/ui/progress-custom";
 import { useQuestionnaireStore } from "@/lib/store";
 import { activeQuestionnaire } from "@/config/questionnaire";
 import { cn } from "@/lib/utils";
@@ -29,9 +30,7 @@ export default function ProgressIndicator() {
         </span>
         <span>{Math.round(progress)}% 完成</span>
       </div>
-
       <Progress value={progress} className="h-2" />
-
       <div className="flex justify-between">
         {steps.map((step, index) => (
           <button
