@@ -9,7 +9,7 @@
 
 A modern, accessible, and customizable multi-step questionnaire framework built with React, TypeScript, and Next.js. Perfect for surveys, onboarding flows, and complex form applications.
 
-![Questionnaire Demo](xxxx)
+![Questionnaire Demo](https://quiz-flow-nextjs.vercel.app/)
 
 ## Features
 
@@ -30,7 +30,7 @@ A modern, accessible, and customizable multi-step questionnaire framework built 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/multi-step-questionnaire.git
+git clone https://github.com/IlIIIIIIlI/quiz-flow-nextjs.git
 
 # Navigate to the project directory
 cd multi-step-questionnaire
