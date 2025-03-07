@@ -9,7 +9,6 @@
 
 A modern, accessible, and customizable multi-step questionnaire framework built with React, TypeScript, and Next.js. Perfect for surveys, onboarding flows, and complex form applications.
 
-![Questionnaire Demo](https://quiz-flow-nextjs.vercel.app/)
 
 ## Features
 
